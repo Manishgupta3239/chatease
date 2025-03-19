@@ -6,7 +6,7 @@ export const UseLogin =async(username,password)=>{
     }
     try {
         const data = {username,password};
-        const response = await axios.post('http://localhost:4000/api/auth/login', data, { withCredentials: true });
+        const response = await axios.post('https://chatease-k9of.onrender.com/api/auth/login', data, { withCredentials: true });
         if(response.status == 200){
             localStorage.setItem('token',response.data.token)
             localStorage.setItem('sender', JSON.stringify(response.data.data));

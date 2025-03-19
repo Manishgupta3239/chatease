@@ -10,7 +10,7 @@ const UserProvider = ({children}) => {
  
     const getData = async (token) => {
       try {
-        const response = await axios.get('http://localhost:4000/api/users/users',{ withCredentials: true });
+        const response = await axios.get('https://chatease-k9of.onrender.com/api/users/users',{ withCredentials: true });
         
         if (response) {
             // console.log(response.data);

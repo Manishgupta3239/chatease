@@ -15,7 +15,7 @@ export const UseSignUp = async (username, email, password, confirmPassword) => {
     const data = { username, email, password, confirmPassword };
     
     // Send POST request to backend API for signup
-    const response = await axios.post('http://localhost:4000/api/auth/signup', data, { withCredentials: true });
+    const response = await axios.post('https://chatease-k9of.onrender.com/api/auth/signup', data, { withCredentials: true });
 
     // Check if the response status is 200 (successful)
     if (response.status === 200) {

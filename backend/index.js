@@ -18,7 +18,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow all origins, you can replace "*" with specific domains like ["http://localhost:3000"] for more security
+    origin: "https://chatease-a11c7.web.app/", // Allow all origins, you can replace "*" with specific domains like ["http://localhost:3000"] for more security
     methods: ["GET", "POST"],
     credentials: true, // Allow cookies or authentication credentials
   })
@@ -34,7 +34,7 @@ app.use("/api/messages", messagesRoutes);
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // Client's URL
+    origin: "https://chatease-a11c7.web.app/", // Client's URL
     methods: ["GET", "POST"],
     credentials: true,
   },

@@ -48,7 +48,7 @@ function Home() {
         setPreview(URL.createObjectURL(handleFileInput));
       }
       const response = await axios.post(
-        "http://localhost:4000/api/messages/sendMessage", //send message to database
+        "https://chatease-k9of.onrender.com/api/messages/sendMessage", //send message to database
         formData,
         { withCredentials: true }
       );
@@ -81,7 +81,7 @@ function Home() {
       if (!receiver) return;
       try {
         const response = await axios.post(
-          "http://localhost:4000/api/messages/getMessage",
+          "https://chatease-k9of.onrender.com/api/messages/getMessage",
           { receiverId: receiver._id },
           { withCredentials: true }
         );

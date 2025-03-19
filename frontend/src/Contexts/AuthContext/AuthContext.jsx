@@ -11,7 +11,7 @@ export const AuthContextProvider = ({ children }) => {
   const verify = async() => {
     // const token = localStorage.getItem("token");
     try {
-        const res = await axios.get('http://localhost:4000/api/auth/authenticate',{withCredentials:true});;
+        const res = await axios.get('/https://chatease-k9of.onrender.com/api/auth/authenticate',{withCredentials:true});;
         if(res.status == 200){
             setLoading(false)
             setAuthenticate(true);

@@ -5,7 +5,7 @@ export const SocketContext = createContext();
 
 export const SocketContextProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
-  const url = "http://localhost:4000";
+  const url = "https://chatease-k9of.onrender.com";
   const token = localStorage.getItem("token"); // Fetch the token from localStorage
 
   // Socket connection function

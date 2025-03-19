@@ -12,7 +12,7 @@ function Navbar() {
     const handleLogout = async() => {
         // Add your logout logic here
         try {
-            const res = await axios.get('http://localhost:4000/api/auth/logout',{withCredentials:true});
+            const res = await axios.get('https://chatease-k9of.onrender.com/api/auth/logout',{withCredentials:true});
             if(res.status == 200){
             alert('Logged out successfully');
             localStorage.clear();

@@ -33,7 +33,7 @@ const Profile = () => {
     formData.append("photo", photo);
 
     try {
-      const response = await axios.post("http://localhost:4000/api/users/upload", formData, { withCredentials: true }, {
+      const response = await axios.post("https://chatease-k9of.onrender.com/api/users/upload", formData, { withCredentials: true }, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

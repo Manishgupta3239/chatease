@@ -34,7 +34,7 @@ app.use("/api/messages", messagesRoutes);
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://chatease-a11c7.web.app/", // Client's URL
+    origin: "https://chatease-a11c7.web.app", // Client's URL
     methods: ["GET", "POST"],
     credentials: true,
   },

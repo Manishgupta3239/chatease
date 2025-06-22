@@ -18,7 +18,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://chatease-a11c7.web.app/", // Allow all origins, you can replace "*" with specific domains like ["http://localhost:3000"] for more security
+    origin: "https://chatease-a11c7.web.app", // Allow all origins, you can replace "*" with specific domains like ["http://localhost:3000"] for more security
     methods: ["GET", "POST"],
     credentials: true, // Allow cookies or authentication credentials
   })
